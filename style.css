@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-image: linear-gradient(to bottom, rgba(206, 24, 24, 0.82), pink);
+    background-attachment: fixed;
+     height: 100vh;
+  
+}
+
+.container{
+
+
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    gap: 50%;
+    background-image: url(./images/couple-7737589_1280.png);
+    text-align: center;
+    border-radius: 50%;
+    width: 400px; 
+    height: 400px;
+    margin: auto; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-size: cover;
+    box-shadow: 0 0 15px white; 
+  animation: glow 10s linear infinite;
+ 
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0); 
+    }
+    50% {
+        box-shadow: 0 0 60px 30px rgba(255, 255, 255, 0.719); /
+    }
+    100% {
+        box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0); 
+    }
+}
+
+
+
+
+
+.valentine-message {
+    font-size: 36px;
+    color: #e91e63; 
+    font-family: 'Lobster', cursive; 
+     overflow: hidden;
+     animation: animateText 5s linear infinite alternate-reverse;
+}
+
+@keyframes animateText {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(300px);
+    }
+}
+
+
+
+.heart i{
+    color: pink;
+    font-size: 100px;
+   
+   
+}
+
+@keyframes heartRain {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 1.5;
+    }
+}
+
+.heart {
+    position: absolute;
+    animation: heartRain 4s linear infinite;
+}
+
+.heart.heart1 {
+    left: 10%; 
+    top: -10%;
+    animation-delay: 1s;
+}
+
+.heart.heart2 {
+    left: 50%;
+    top: -20%;
+    animation-delay: 1s;
+}
+
+.heart.heart3 {
+    left: 200%; 
+    top: -30%;
+    animation-delay: 2s;
+}
+
+.heart.heart4 {
+    left: 250%;
+    top: -150px;
+    animation-delay: 2s;
+}
+
+.heart.heart5 {
+    right: 100%;
+    top: -200px;
+}
+
+.heart.heart6 {
+    right: 150%;
+    top: -250px;
+    animation-delay: 3s;
+}
+
+.heart.heart7 {
+    right: 200%;
+    top: -300px;
+    animation-delay: 4s;
+}
+
+.heart.heart8 {
+    left: 100%;
+    top: -350px;
+    animation-delay: 5s;
+}
